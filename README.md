@@ -38,13 +38,16 @@
 - **TypeScript**: Type-safe JavaScript.
 - **Tailwind CSS**: Utility-first CSS framework.
 - **shadcn/ui**: Beautifully designed components.
-- **React Query**: Data fetching and state management.
 - **NextAuth.js**: Authentication solution.
 
 ### Backend
 
 - **GitHub REST API**: For all gist operations.
 - **Vercel Edge Functions**: API routes and middleware.
+
+### Database
+
+- \*\*Mongoose: MongoDB object modeling tool.
 
 ### Development Tools
 
