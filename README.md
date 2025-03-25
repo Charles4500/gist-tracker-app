@@ -82,8 +82,6 @@
    GITHUB_CLIENT_ID=your_client_id
    GITHUB_CLIENT_SECRET=your_client_secret
    NEXT_PUBLIC_GITHUB_TOKEN=your_personal_access_token
-   NEXTAUTH_URL=http://localhost:3000
-   MONGODB_URI=mondodbconnectionstring
    ```
 4. Start the development server:
 
