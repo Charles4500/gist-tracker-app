@@ -7,7 +7,7 @@ import { useSession } from "next-auth/react";
 import { Layout } from "@/layout/Layout";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-const GITHUB_ACCESS_TOKEN = " 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";
+const GITHUB_ACCESS_TOKEN = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
 
 const MyGistsPage = () => {
   const router = useRouter();
