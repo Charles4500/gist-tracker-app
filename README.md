@@ -16,7 +16,6 @@
 ### ✨ User Experience
 
 - **Responsive Design**: Works perfectly on desktop and mobile devices.
-- **Dark/Light Mode**: Eye-friendly themes for coding at any time.
 - **Loading States**: Smooth transitions between views.
 - **Error Handling**: Clear feedback when things go wrong.
 
@@ -47,7 +46,7 @@
 
 ### Database
 
-- \*\*Mongoose: MongoDB object modeling tool.
+- **Mongoose**: MongoDB object modeling tool.
 
 ### Development Tools
 
