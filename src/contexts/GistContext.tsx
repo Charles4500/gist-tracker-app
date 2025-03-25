@@ -14,8 +14,6 @@ import { useSession } from "next-auth/react";
 const GITHUB_API_URL = "https://api.github.com/gists";
 const GITHUB_ACCESS_TOKEN = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
 
-// 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
-// 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
 interface GistContextType {
   gists: Gist[];
   isLoading: boolean;
