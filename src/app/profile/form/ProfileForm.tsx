@@ -100,7 +100,7 @@ export const ProfileForm = () => {
       if (!response.ok) throw new Error(data.message);
       toast.success(data.message);
       await signOut({ redirect: false });
-      router.push("/");
+      router.push("/sign-in");
     } catch (error) {
       console.error("Error :", error);
       toast.error("Something went wrong");
