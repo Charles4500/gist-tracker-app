@@ -48,8 +48,12 @@ export async function POST(request: Request) {
             );
         }
         const hashedPassword = await bcrypt.hash(password, 10);
+        //Extracting the name of the user from email
+        const name = email.split("@")[0]?.replace(/[^a-zA-Z]/g, "");
+
         const newUser = new User({
             email,
+            name,
             password: hashedPassword,
         });
         await newUser.save();
