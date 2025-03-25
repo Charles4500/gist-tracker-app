@@ -69,14 +69,14 @@
 1. Clone the repository:
    ```bash
    git clone https://github.com/Charles4500/gist-tracker-app
-   cd gist-tracker
+   cd gist-tracker-app
    ```
 2. Install dependencies:
    ```bash
    npm install
    ```
 3. Set up environment variables:
-   . Create a `.env.local` file in the root directory.
+   . Create a `.env` file in the root directory.
    . Add the following environment variables:
    ```env
    GITHUB_CLIENT_ID=your_client_id
