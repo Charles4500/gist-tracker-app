@@ -6,9 +6,11 @@ import { PlusCircle } from "lucide-react";
 import { useSession } from "next-auth/react";
 import { Layout } from "@/layout/Layout";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 const GITHUB_ACCESS_TOKEN = " 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";
 
 const MyGistsPage = () => {
+  const router = useRouter();
   const { data: session } = useSession();
   const [myGists, setMyGists] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -55,7 +57,10 @@ const MyGistsPage = () => {
 
             {myGists.length === 0 && !isLoading && (
               <div className="w-full mt-8 flex justify-center">
-                <Button onClick={() => {}} className="hover-lift">
+                <Button
+                  onClick={() => router.push("/create-gist")}
+                  className="hover-lift"
+                >
                   <PlusCircle className="mr-2 h-4 w-4" />
                   Create your first gist
                 </Button>
