@@ -4,20 +4,12 @@ import { Layout } from "@/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { FileText, Code, Star, Users, ArrowRight } from "lucide-react";
 import { Session } from "next-auth";
-// import { useGists } from "@/contexts/GistContext";
-// import { GistCard } from "./gists/all-gists/GistCard";
 
 interface Props {
   session: Session | null;
 }
 
 const HomePage: React.FC<Props> = () => {
-  // const router = useRouter();
-  // const { gists } = useGists();
-  // const [isLoading] = useState(false);
-  // Get only the last 3 gists to showcase
-  // const recentGists = gists.slice(0, 3);
-
   const features = [
     {
       icon: <FileText className="h-5 w-5" />,
@@ -144,7 +136,6 @@ function Counter() {
       </section>
 
       {/* Recent Gists Section */}
-      
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-violet-50 to-blue-50 dark:from-slate-950 dark:to-indigo-950">
