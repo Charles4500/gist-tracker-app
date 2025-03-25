@@ -2,7 +2,7 @@
 import { NextResponse } from "next/server";
 import User from "@/models/users";
 import connectionToDatabase from "@/lib/mongodb";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth";
 import { getServerSession } from "next-auth";
 
 export async function DELETE() {

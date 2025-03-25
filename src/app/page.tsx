@@ -3,13 +3,11 @@
 import { Layout } from "@/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { FileText, Code, Star, Users, ArrowRight } from "lucide-react";
-import { Session } from "next-auth";
 
-interface Props {
-  session: Session | null;
-}
 
-const HomePage: React.FC<Props> = () => {
+
+
+const HomePage = () => {
   const features = [
     {
       icon: <FileText className="h-5 w-5" />,

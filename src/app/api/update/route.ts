@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 import User from "@/models/users";
 import connectionToDatabase from "@/lib/mongodb";
 import { getServerSession } from "next-auth";
-import { authOptions } from "../auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth";
 
 export async function PATCH(requests: Request) {
     try {
