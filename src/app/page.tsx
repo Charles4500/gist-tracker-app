@@ -1,8 +1,7 @@
 // import { useRouter } from "next/navigation";
 "use client";
 import { Layout } from "@/layout/Layout";
-import { Button } from "@/components/ui/button";
-import { FileText, Code, Star, Users, ArrowRight } from "lucide-react";
+import { FileText, Code, Star, Users } from "lucide-react";
 
 const HomePage = () => {
   const features = [
@@ -45,24 +44,6 @@ const HomePage = () => {
               A minimalist platform for developers to create, manage, and share
               code snippets. Simple, elegant, and powerful.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="text-base hover-lift"
-                onClick={() => {}}
-              >
-                Get Started
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="text-base hover-lift"
-                onClick={() => {}}
-              >
-                Explore Gists
-              </Button>
-            </div>
           </div>
 
           {/* Floating code card */}
