@@ -52,7 +52,6 @@
 
 - **ESLint**: JavaScript/TypeScript linter.
 - **Prettier**: Code formatter.
-- **Husky**: Git hooks.
 - **Commitlint**: Enforce conventional commits.
 
 ---
@@ -69,7 +68,7 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/gist-tracker.git
+   git clone https://github.com/Charles4500/gist-tracker-app
    cd gist-tracker
    ```
 2. Install dependencies:
@@ -82,6 +81,9 @@
    ```env
    GITHUB_CLIENT_ID=your_client_id
    GITHUB_CLIENT_SECRET=your_client_secret
+   NEXT_PUBLIC_GITHUB_TOKEN=your_personal_access_token
+   NEXTAUTH_URL=http://localhost:3000
+   MONGODB_URI=mondodbconnectionstring
    ```
 4. Start the development server:
 
