@@ -4,9 +4,6 @@ import { Layout } from "@/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { FileText, Code, Star, Users, ArrowRight } from "lucide-react";
 
-
-
-
 const HomePage = () => {
   const features = [
     {
@@ -144,13 +141,6 @@ function Counter() {
               Join our community of developers and start organizing your code
               snippets today.
             </p>
-            <Button
-              size="lg"
-              className="text-base hover-lift"
-              onClick={() => {}}
-            >
-              Create a free account
-            </Button>
           </div>
         </div>
       </section>
